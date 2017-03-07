@@ -1,0 +1,26 @@
+{
+	"data": [
+		{
+		  "title": "test 1",
+		  "content": "bal bal bal",
+		  "date": "1488891120893",
+		  "done": false,
+		  "type": 2,
+		  "isDone": false,
+		  "links": {
+		    "filtered": "http://localhost:8000/api/todos/?title=test&type=1"
+		  }
+		},
+		{
+		  "title": "test 2",
+		  "content": "bal bal bal",
+		  "date": "1488892020893",
+		  "done": false,
+		  "type": 2,
+		  "isDone": false,
+		  "links": {
+		    "filtered": "http://localhost:8000/api/todos/?title=test&type=2"
+		  }
+		}
+	]
+}

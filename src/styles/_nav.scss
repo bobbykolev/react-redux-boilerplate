@@ -1,0 +1,62 @@
+.navbar-brand {
+    cursor: pointer;
+}
+
+//nav toggle
+#nav-ani-icon {
+    width: 36px;
+    height: 36px;
+    position: relative;
+
+    //margin: 50px auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+#nav-ani-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+
+    //background: #d3531a;
+    border-radius: 0;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#nav-ani-icon span:nth-child(1) {
+    top: 10px;
+    transform-origin: left center;
+}
+
+#nav-ani-icon span:nth-child(2) {
+    top: 19px;
+    transform-origin: left center;
+}
+
+#nav-ani-icon span:nth-child(3) {
+    top: 32px;
+    transform-origin: left center;
+}
+
+#nav-ani-icon.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 7px;
+    left: 8px;
+}
+
+#nav-ani-icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#nav-ani-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 8px;
+}
